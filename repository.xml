@@ -1,0 +1,1169 @@
+<repository name='JCRBrowser Repository' lastmodified='20120509073923.999'>
+  <resource id='org.sboehme.jcrbrowser/2.0.3' symbolicname='org.sboehme.jcrbrowser' presentationname='jcrbrowser' uri='org/sboehme/jcrbrowser/2.0.3/jcrbrowser-2.0.3.jar' version='2.0.3'>
+    <description>org.sboehme - jcrbrowser</description>
+    <size>284753</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.sboehme.jcrbrowser'/>
+      <p n='presentationname' v='jcrbrowser'/>
+      <p n='version' t='version' v='2.0.3'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.sboehme.jcrbrowser'/>
+      <p n='version' t='version' v='2.0.3'/>
+      <p n='uses:' v='javax.jcr,org.apache.sling.api.servlets,javax.servlet,org.apache.sling.api,org.slf4j,org.apache.sling.api.resource,javax.servlet.http'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.jcr)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.jcr;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.core))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.core</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.fmt))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.fmt</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.sql))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.sql</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.tlv))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.tlv</require>
+    <require name='package' filter='(&amp;(package=org.apache.sling.api)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sling.api;version="[2.1,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sling.api.resource)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sling.api.resource;version="[2.1,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sling.api.servlets)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sling.api.servlets;version="[2.1,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.functions)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.functions;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl.parser)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl.parser;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl.test)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl.test;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl.test.beans)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl.test.beans;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.support)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.support;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.resources)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.resources;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.core)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.core;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.fmt)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.fmt;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.sql)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.sql;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.xml)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.xml;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.core)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.core;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.fmt)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.fmt;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.sql)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.sql;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.xml)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.xml;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.core)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.core;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.fmt)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.fmt;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.sql)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.sql;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.xml)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.xml;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tei)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tei;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tlv)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tlv;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.xalan.serialize))' extend='false' multiple='false' optional='false'>Import package org.apache.xalan.serialize</require>
+    <require name='package' filter='(&amp;(package=org.apache.xalan.templates))' extend='false' multiple='false' optional='false'>Import package org.apache.xalan.templates</require>
+    <require name='package' filter='(&amp;(package=org.apache.xml.utils))' extend='false' multiple='false' optional='false'>Import package org.apache.xml.utils</require>
+    <require name='package' filter='(&amp;(package=org.apache.xpath))' extend='false' multiple='false' optional='false'>Import package org.apache.xpath</require>
+    <require name='package' filter='(&amp;(package=org.apache.xpath.objects))' extend='false' multiple='false' optional='false'>Import package org.apache.xpath.objects</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.5,2)"</require>
+  </resource>
+    <resource id='org.sboehme.jcrbrowser/2.0.2' symbolicname='org.sboehme.jcrbrowser' presentationname='jcrbrowser' uri='org/sboehme/jcrbrowser/2.0.2/jcrbrowser-2.0.2.jar' version='2.0.2'>
+    <description>org.sboehme - jcrbrowser</description>
+    <size>284598</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.sboehme.jcrbrowser'/>
+      <p n='presentationname' v='jcrbrowser'/>
+      <p n='version' t='version' v='2.0.2'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.sboehme.jcrbrowser'/>
+      <p n='version' t='version' v='2.0.2'/>
+      <p n='uses:' v='javax.jcr,org.apache.sling.api.servlets,javax.servlet,org.apache.sling.api,org.slf4j,org.apache.sling.api.resource,javax.servlet.http'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.jcr)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.jcr;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.core))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.core</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.fmt))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.fmt</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.sql))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.sql</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.jsp.jstl.tlv))' extend='false' multiple='false' optional='false'>Import package javax.servlet.jsp.jstl.tlv</require>
+    <require name='package' filter='(&amp;(package=org.apache.sling.api)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sling.api;version="[2.1,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sling.api.resource)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sling.api.resource;version="[2.1,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sling.api.servlets)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sling.api.servlets;version="[2.1,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.functions)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.functions;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl.parser)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl.parser;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl.test)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl.test;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.jstl.test.beans)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.jstl.test.beans;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.lang.support)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.lang.support;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.resources)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.resources;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.core)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.core;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.fmt)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.fmt;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.sql)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.sql;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.xml)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.common.xml;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.core)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.core;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.fmt)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.fmt;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.sql)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.sql;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.el.xml)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.el.xml;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.core)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.core;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.fmt)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.fmt;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.sql)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.sql;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tag.rt.xml)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tag.rt.xml;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tei)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tei;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.taglibs.standard.tlv)(version&gt;=1.1.2))' extend='false' multiple='false' optional='false'>Import package org.apache.taglibs.standard.tlv;version=1.1.2</require>
+    <require name='package' filter='(&amp;(package=org.apache.xalan.serialize))' extend='false' multiple='false' optional='false'>Import package org.apache.xalan.serialize</require>
+    <require name='package' filter='(&amp;(package=org.apache.xalan.templates))' extend='false' multiple='false' optional='false'>Import package org.apache.xalan.templates</require>
+    <require name='package' filter='(&amp;(package=org.apache.xml.utils))' extend='false' multiple='false' optional='false'>Import package org.apache.xml.utils</require>
+    <require name='package' filter='(&amp;(package=org.apache.xpath))' extend='false' multiple='false' optional='false'>Import package org.apache.xpath</require>
+    <require name='package' filter='(&amp;(package=org.apache.xpath.objects))' extend='false' multiple='false' optional='false'>Import package org.apache.xpath.objects</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.5,2)"</require>
+  </resource>
+  <resource id='com.springsource.org.apache.xml.serializer/2.7.1' presentationname='Apache Xalan XML Serializer' symbolicname='com.springsource.org.apache.xml.serializer' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.xml.serializer&amp;version=2.7.1&amp;type=binary' version='2.7.1'>
+    <size>
+      278246
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Xalan XML Serializer'/>
+      <p n='symbolicname' v='com.springsource.org.apache.xml.serializer'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.serializer'/>
+      <p n='uses' v='javax.xml.transform,org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.serializer.dom3'/>
+      <p n='uses' v='org.apache.xml.serializer,org.w3c.dom,org.w3c.dom.ls,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.serializer.utils'/>
+      <p n='uses' v='javax.xml.transform,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.ls)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.ls ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.traversal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.traversal ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.ext)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.ext ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers ;version=0.0.0
+    </require>
+  </resource>
+  <resource id='com.springsource.org.apache.xml.resolver/1.2.0' presentationname='Apache XML Commons Resolver' symbolicname='com.springsource.org.apache.xml.resolver' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.xml.resolver&amp;version=1.2.0&amp;type=binary' version='1.2.0'>
+    <size>
+      84866
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache XML Commons Resolver'/>
+      <p n='symbolicname' v='com.springsource.org.apache.xml.resolver'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.env'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.resolver'/>
+      <p n='uses' v='org.apache.xml.resolver.helpers,org.apache.xml.resolver.readers'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.resolver.apps'/>
+      <p n='uses' v='org.xml.sax'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.resolver.etc'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.resolver.helpers'/>
+      <p n='uses' v='javax.xml.transform,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.resolver.readers'/>
+      <p n='uses' v='javax.xml.parsers,org.apache.xml.resolver,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.resolver.tools'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.resolver,org.xml.sax'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+  </resource>
+  <resource id='com.springsource.org.apache.xalan/2.7.1' presentationname='Apache Xalan XSLT Support' symbolicname='com.springsource.org.apache.xalan' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.xalan&amp;version=2.7.1&amp;type=binary' version='2.7.1'>
+    <size>
+      3177200
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Xalan XSLT Support'/>
+      <p n='symbolicname' v='com.springsource.org.apache.xalan'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='java_cup.runtime'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel'/>
+      <p n='uses' v='org.apache.bcel.classfile,org.apache.bcel.util'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.classfile'/>
+      <p n='uses' v='org.apache.bcel,org.apache.bcel.util'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.generic'/>
+      <p n='uses' v='org.apache.bcel.classfile,org.apache.bcel.util'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.util'/>
+      <p n='uses' v='org.apache.bcel,org.apache.bcel.classfile,org.apache.bcel.generic'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.verifier'/>
+      <p n='uses' v='javax.swing,javax.swing.event'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.verifier.exc'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.verifier.statics'/>
+      <p n='uses' v='org.apache.bcel,org.apache.bcel.classfile,org.apache.bcel.generic,org.apache.bcel.verifier,org.apache.bcel.verifier.exc'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.bcel.verifier.structurals'/>
+      <p n='uses' v='org.apache.bcel,org.apache.bcel.generic,org.apache.bcel.verifier'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.regexp'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.client'/>
+      <p n='uses' v='javax.xml.transform'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.extensions'/>
+      <p n='uses' v='javax.xml.namespace,javax.xml.transform,javax.xml.xpath,org.apache.xalan.templates,org.apache.xalan.transformer,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.functions,org.apache.xpath.objects,org.w3c.dom,org.w3c.dom.traversal'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.lib'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xalan.extensions,org.apache.xalan.templates,org.apache.xalan.transformer,org.apache.xml.serializer,org.apache.xpath,org.apache.xpath.objects,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.lib.sql'/>
+      <p n='uses' v='javax.naming,javax.xml.transform,org.apache.xalan.extensions,org.apache.xml.dtm,org.apache.xml.dtm.ref,org.apache.xml.utils,org.apache.xpath.objects,org.w3c.dom,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.processor'/>
+      <p n='uses' v='javax.xml.transform,javax.xml.transform.sax,org.apache.xalan.templates,org.apache.xml.utils,org.apache.xpath,org.w3c.dom,org.xml.sax,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.res'/>
+      <p n='uses' v='org.apache.xpath.res'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.serialize'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.dtm,org.apache.xml.serializer,org.apache.xpath,org.apache.xpath.objects,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.templates'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xalan.extensions,org.apache.xalan.processor,org.apache.xalan.transformer,org.apache.xml.dtm,org.apache.xml.serializer,org.apache.xml.utils,org.apache.xml.utils.res,org.apache.xpath,org.apache.xpath.axes,org.apache.xpath.compiler,org.apache.xpath.functions,org.apache.xpath.objects,org.apache.xpath.operations,org.apache.xpath.patterns,org.w3c.dom,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.trace'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xalan.templates,org.apache.xalan.transformer,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.objects,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.transformer'/>
+      <p n='uses' v='javax.xml.transform,javax.xml.transform.sax,org.apache.xalan.extensions,org.apache.xalan.templates,org.apache.xalan.trace,org.apache.xml.dtm,org.apache.xml.dtm.ref,org.apache.xml.serializer,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.axes,org.apache.xpath.functions,org.apache.xpath.objects,org.w3c.dom,org.w3c.dom.traversal,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xslt'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc'/>
+      <p n='uses' v='org.apache.xalan.xsltc.runtime,org.apache.xml.dtm,org.apache.xml.serializer,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.cmdline'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.cmdline.getopt'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.compiler'/>
+      <p n='uses' v='java_cup.runtime,org.apache.bcel.classfile,org.apache.bcel.generic,org.apache.xalan.xsltc.compiler.util,org.apache.xalan.xsltc.runtime,org.apache.xml.serializer,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.compiler.util'/>
+      <p n='uses' v='org.apache.bcel.classfile,org.apache.bcel.generic,org.apache.xalan.xsltc.compiler'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.dom'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xalan.xsltc,org.apache.xalan.xsltc.runtime,org.apache.xalan.xsltc.util,org.apache.xml.dtm,org.apache.xml.dtm.ref,org.apache.xml.dtm.ref.sax2dtm,org.apache.xml.serializer,org.apache.xml.utils,org.w3c.dom,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.runtime'/>
+      <p n='uses' v='javax.xml.parsers,javax.xml.transform,org.apache.xalan.xsltc,org.apache.xalan.xsltc.dom,org.apache.xml.dtm,org.apache.xml.serializer,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.runtime.output'/>
+      <p n='uses' v='javax.xml.parsers,org.apache.xml.serializer,org.w3c.dom,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.trax'/>
+      <p n='uses' v='javax.xml.parsers,javax.xml.transform,javax.xml.transform.sax,org.apache.xalan.xsltc,org.apache.xalan.xsltc.compiler,org.apache.xalan.xsltc.dom,org.apache.xalan.xsltc.runtime,org.apache.xalan.xsltc.runtime.output,org.apache.xml.serializer,org.w3c.dom,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xalan.xsltc.util'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.dtm'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.utils,org.w3c.dom,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.dtm.ref'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xerces.parsers,org.apache.xml.dtm,org.apache.xml.utils,org.w3c.dom,org.w3c.dom.traversal,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.dtm.ref.dom2dtm'/>
+      <p n='uses' v='javax.xml.transform,javax.xml.transform.dom,org.apache.xml.dtm,org.apache.xml.dtm.ref,org.apache.xml.utils,org.w3c.dom,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.dtm.ref.sax2dtm'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.dtm,org.apache.xml.dtm.ref,org.apache.xml.serializer,org.apache.xml.utils,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.res'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.utils'/>
+      <p n='uses' v='javax.xml.transform,org.w3c.dom,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.utils.res'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xalan.extensions,org.apache.xml.dtm,org.apache.xml.utils,org.apache.xpath.axes,org.apache.xpath.compiler,org.apache.xpath.functions,org.apache.xpath.objects,org.apache.xpath.operations,org.apache.xpath.patterns,org.w3c.dom,org.w3c.dom.traversal,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.axes'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.dtm,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.compiler,org.apache.xpath.functions,org.apache.xpath.objects,org.apache.xpath.patterns,org.w3c.dom,org.w3c.dom.traversal,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.compiler'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.functions,org.apache.xpath.patterns'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.domapi'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.objects,org.w3c.dom,org.w3c.dom.events,org.w3c.dom.xpath'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.functions'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.compiler,org.apache.xpath.objects,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.jaxp'/>
+      <p n='uses' v='javax.xml.namespace,javax.xml.parsers,javax.xml.transform,javax.xml.xpath,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.functions,org.apache.xpath.objects,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.objects'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.dtm,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.axes,org.w3c.dom,org.w3c.dom.traversal,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.operations'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xalan.templates,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.axes,org.apache.xpath.objects'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.patterns'/>
+      <p n='uses' v='javax.xml.transform,org.apache.xml.dtm,org.apache.xpath,org.apache.xpath.axes,org.apache.xpath.objects'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xpath.res'/>
+      <p n='uses' v='org.apache.xml.res'/>
+      <p n='version' t='version' v='2.7.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.naming ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.text)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.text ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.dom ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.sax ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.xpath ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xerces.parsers)(version&gt;=2.9.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.xerces.parsers ;version=[2.9.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xml.serialize)(version&gt;=2.9.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.xml.serialize ;version=[2.9.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xml.serializer)(version&gt;=2.7.1)(version&lt;=2.7.1))' multiple='false' name='package' optional='false'>
+      Import package org.apache.xml.serializer ;version=[2.7.1,2.7.1]
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.events)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.events ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.traversal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.traversal ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.xpath ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.ext)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.ext ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers ;version=0.0.0
+    </require>
+  </resource>
+    <resource id='com.springsource.javax.servlet.jsp.jstl/1.1.2' presentationname='Java JSP Standard Tag Library' symbolicname='com.springsource.javax.servlet.jsp.jstl' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.servlet.jsp.jstl&amp;version=1.1.2&amp;type=binary' version='1.1.2'>
+    <size>
+      21266
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Java JSP Standard Tag Library'/>
+      <p n='symbolicname' v='com.springsource.javax.servlet.jsp.jstl'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.jsp.jstl.core'/>
+      <p n='uses' v='javax.servlet,javax.servlet.http,javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.jsp.jstl.fmt'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.jsp.jstl.sql'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.jsp.jstl.tlv'/>
+      <p n='uses' v='javax.servlet.jsp.tagext,org.xml.sax'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.servlet)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet ;version=[2.5.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.http)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.http ;version=[2.5.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp ;version=[2.1.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp.tagext)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp.tagext ;version=[2.1.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.taglibs.standard.tag.common.fmt)(version&gt;=1.1.2)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.taglibs.standard.tag.common.fmt ;version=[1.1.2,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+  </resource>
+    <resource id='com.springsource.org.apache.taglibs.standard/1.1.2' presentationname='Apache Standard Tag Libraries' symbolicname='com.springsource.org.apache.taglibs.standard' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.taglibs.standard&amp;version=1.1.2&amp;type=binary' version='1.1.2'>
+    <size>
+      398371
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Standard Tag Libraries'/>
+      <p n='symbolicname' v='com.springsource.org.apache.taglibs.standard'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.extra.spath'/>
+      <p n='uses' v='javax.servlet.jsp,org.xml.sax'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.functions'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.lang.jstl'/>
+      <p n='uses' v='javax.servlet,javax.servlet.http,javax.servlet.jsp,javax.servlet.jsp.tagext,org.apache.taglibs.standard.lang.jstl.parser'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.lang.jstl.parser'/>
+      <p n='uses' v='org.apache.taglibs.standard.lang.jstl'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.lang.jstl.test'/>
+      <p n='uses' v='javax.servlet,javax.servlet.http,javax.servlet.jsp,javax.servlet.jsp.el'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.lang.jstl.test.beans'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.lang.support'/>
+      <p n='uses' v='javax.servlet.jsp,javax.servlet.jsp.tagext'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.resources'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.common.core'/>
+      <p n='uses' v='javax.servlet,javax.servlet.http,javax.servlet.jsp,javax.servlet.jsp.el'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.common.fmt'/>
+      <p n='uses' v='javax.servlet.jsp,javax.servlet.jsp.jstl.fmt,javax.servlet.jsp.tagext'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.common.sql'/>
+      <p n='uses' v='javax.servlet.jsp,javax.sql'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.common.xml'/>
+      <p n='uses' v='javax.servlet.jsp,javax.servlet.jsp.tagext,javax.xml.transform,org.apache.xml.utils,org.apache.xpath,org.apache.xpath.objects,org.w3c.dom,org.w3c.dom.traversal,org.xml.sax'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.el.core'/>
+      <p n='uses' v='javax.servlet.jsp,javax.servlet.jsp.tagext'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.el.fmt'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.el.sql'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.el.xml'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.rt.core'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.rt.fmt'/>
+      <p n='uses' v='javax.servlet.jsp,javax.servlet.jsp.jstl.fmt'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.rt.sql'/>
+      <p n='uses' v='javax.servlet.jsp'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tag.rt.xml'/>
+      <p n='uses' v='javax.servlet.jsp,javax.xml.transform,org.xml.sax'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tei'/>
+      <p n='uses' v='javax.servlet.jsp.tagext'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.taglibs.standard.tlv'/>
+      <p n='uses' v='javax.servlet.jsp.tagext,org.xml.sax,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='1.1.2'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.naming
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet ;version=[2.5.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.http)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.http ;version=[2.5.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp ;version=[2.1.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp.el)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp.el ;version=[2.1.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp.jstl.core)(version&gt;=1.1.2)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp.jstl.core ;version=[1.1.2,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp.jstl.fmt)(version&gt;=1.1.2)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp.jstl.fmt ;version=[1.1.2,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp.jstl.sql)(version&gt;=1.1.2)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp.jstl.sql ;version=[1.1.2,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.jsp.tagext)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.jsp.tagext ;version=[2.1.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.sql)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.sql
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xalan.serialize)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.apache.xalan.serialize ;version=[2.7.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xalan.templates)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.apache.xalan.templates ;version=[2.7.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xml.utils)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.apache.xml.utils ;version=[2.7.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xpath)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.apache.xpath ;version=[2.7.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xpath.objects)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.apache.xpath.objects ;version=[2.7.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+  </resource>
+    <resource id='com.springsource.org.apache.xmlcommons/1.3.4' presentationname='Apache XML Commons XML-APIs' symbolicname='com.springsource.org.apache.xmlcommons' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.xmlcommons&amp;version=1.3.4&amp;type=binary' version='1.3.4'>
+    <size>
+      199320
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache XML Commons XML-APIs'/>
+      <p n='symbolicname' v='com.springsource.org.apache.xmlcommons'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.datatype'/>
+      <p n='uses' v='javax.xml.namespace'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.namespace'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.parsers'/>
+      <p n='uses' v='javax.xml.validation,org.w3c.dom,org.xml.sax,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform.dom'/>
+      <p n='uses' v='javax.xml.transform,org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform.sax'/>
+      <p n='uses' v='javax.xml.transform,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform.stream'/>
+      <p n='uses' v='javax.xml.transform'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.validation'/>
+      <p n='uses' v='javax.xml.transform,org.w3c.dom,org.w3c.dom.ls,org.xml.sax'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.xpath'/>
+      <p n='uses' v='javax.xml.namespace,org.xml.sax'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xmlcommons'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.bootstrap'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.css'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.stylesheets,org.w3c.dom.views'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.events'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.views'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.html'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.ls'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.events,org.w3c.dom.traversal'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.ranges'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.stylesheets'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.traversal'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.views'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.xpath'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.xml.sax'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.xml.sax.ext'/>
+      <p n='uses' v='org.xml.sax,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.xml.sax.helpers'/>
+      <p n='uses' v='org.xml.sax'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+  </resource>
+    <resource id='com.springsource.org.apache.xerces/2.9.1' presentationname='Apache Xerces XML Support' symbolicname='com.springsource.org.apache.xerces' uri='http://ebr.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.xerces&amp;version=2.9.1&amp;type=binary' version='2.9.1'>
+    <size>
+      1244694
+    </size>
+    <capability name='fragment'>
+      <p n='host' v='com.springsource.org.apache.xmlcommons'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='com.springsource.org.apache.xmlcommons'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Xerces XML Support'/>
+      <p n='symbolicname' v='com.springsource.org.apache.xerces'/>
+      <p n='version' t='version' v='2.9.1'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.html.dom'/>
+      <p n='uses' v='org.apache.xerces.dom,org.w3c.dom,org.w3c.dom.html,org.xml.sax'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.wml'/>
+      <p n='uses' v='org.w3c.dom'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.wml.dom'/>
+      <p n='uses' v='org.apache.wml,org.apache.xerces.dom,org.w3c.dom'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.dom'/>
+      <p n='uses' v='org.apache.xerces.dom3.as,org.apache.xerces.impl,org.apache.xerces.impl.dtd,org.apache.xerces.impl.validation,org.apache.xerces.impl.xs,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.parser,org.apache.xerces.xs,org.w3c.dom,org.w3c.dom.events,org.w3c.dom.ls,org.w3c.dom.ranges,org.w3c.dom.traversal'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.dom.events'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.events,org.w3c.dom.views'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.dom3.as'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.ls'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl'/>
+      <p n='uses' v='org.apache.xerces.impl.dtd,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.xml.sax'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.dtd'/>
+      <p n='uses' v='org.apache.xerces.impl,org.apache.xerces.impl.dtd.models,org.apache.xerces.impl.dv,org.apache.xerces.impl.validation,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.dtd.models'/>
+      <p n='uses' v='org.apache.xerces.xni'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.dv'/>
+      <p n='uses' v='org.apache.xerces.util,org.apache.xerces.xs'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.dv.dtd'/>
+      <p n='uses' v='org.apache.xerces.impl.dv'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.dv.util'/>
+      <p n='uses' v='org.apache.xerces.xs,org.apache.xerces.xs.datatypes'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.dv.xs'/>
+      <p n='uses' v='javax.xml.datatype,javax.xml.namespace,org.apache.xerces.impl.dv,org.apache.xerces.impl.dv.util,org.apache.xerces.impl.xs,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xs,org.apache.xerces.xs.datatypes,org.w3c.dom'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.io'/>
+      <p n='uses' v='org.apache.xerces.util'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.msg'/>
+      <p n='uses' v='org.apache.xerces.util'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.validation'/>
+      <p n='uses' v='org.apache.xerces.impl.dv,org.apache.xerces.util,org.apache.xerces.xni'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xpath'/>
+      <p n='uses' v='org.apache.xerces.util,org.apache.xerces.xni'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xpath.regex'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xs'/>
+      <p n='uses' v='org.apache.xerces.dom,org.apache.xerces.impl,org.apache.xerces.impl.dv,org.apache.xerces.impl.dv.xs,org.apache.xerces.impl.xs.identity,org.apache.xerces.impl.xs.models,org.apache.xerces.impl.xs.util,org.apache.xerces.parsers,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.apache.xerces.xs,org.w3c.dom,org.w3c.dom.ls,org.xml.sax'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xs.identity'/>
+      <p n='uses' v='org.apache.xerces.impl.xpath,org.apache.xerces.impl.xs,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xs'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xs.models'/>
+      <p n='uses' v='org.apache.xerces.impl.dtd.models,org.apache.xerces.impl.xs,org.apache.xerces.xni,org.apache.xerces.xni.parser'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xs.opti'/>
+      <p n='uses' v='org.apache.xerces.parsers,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.w3c.dom'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xs.traversers'/>
+      <p n='uses' v='org.apache.xerces.impl.dv,org.apache.xerces.impl.xs,org.apache.xerces.impl.xs.identity,org.apache.xerces.impl.xs.opti,org.apache.xerces.impl.xs.util,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.apache.xerces.xs,org.w3c.dom,org.xml.sax'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.impl.xs.util'/>
+      <p n='uses' v='org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xs'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.jaxp'/>
+      <p n='uses' v='javax.xml.parsers,javax.xml.validation,org.apache.xerces.impl,org.apache.xerces.impl.validation,org.apache.xerces.impl.xs.opti,org.apache.xerces.jaxp.validation,org.apache.xerces.parsers,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.parser,org.apache.xerces.xs,org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.jaxp.datatype'/>
+      <p n='uses' v='javax.xml.datatype,javax.xml.namespace'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.jaxp.validation'/>
+      <p n='uses' v='javax.xml.transform,javax.xml.transform.dom,javax.xml.transform.stream,javax.xml.validation,org.apache.xerces.impl.validation,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.apache.xerces.xs,org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.parsers'/>
+      <p n='uses' v='org.apache.xerces.dom3.as,org.apache.xerces.impl,org.apache.xerces.impl.dtd,org.apache.xerces.impl.dv,org.apache.xerces.impl.validation,org.apache.xerces.impl.xs,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.apache.xerces.xs,org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.util'/>
+      <p n='uses' v='javax.xml.namespace,org.apache.xerces.impl,org.apache.xerces.xni,org.apache.xerces.xni.grammars,org.apache.xerces.xni.parser,org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xinclude'/>
+      <p n='uses' v='org.apache.xerces.impl,org.apache.xerces.util,org.apache.xerces.xni,org.apache.xerces.xni.parser'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xni'/>
+      <p n='uses' v='org.apache.xerces.xni.parser'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xni.grammars'/>
+      <p n='uses' v='org.apache.xerces.xni,org.apache.xerces.xni.parser,org.apache.xerces.xs'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xni.parser'/>
+      <p n='uses' v='org.apache.xerces.xni'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xpointer'/>
+      <p n='uses' v='org.apache.xerces.impl,org.apache.xerces.util,org.apache.xerces.xinclude,org.apache.xerces.xni,org.apache.xerces.xni.parser'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xs'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.ls'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xerces.xs.datatypes'/>
+      <p n='uses' v='javax.xml.datatype,javax.xml.namespace,org.apache.xerces.xni,org.apache.xerces.xs'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xml.serialize'/>
+      <p n='uses' v='org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.9.1'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=com.springsource.org.apache.xmlcommons)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host com.springsource.org.apache.xmlcommons
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.datatype)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.datatype ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.dom ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.sax ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.validation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.validation ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xml.resolver)(version&gt;=1.2.0)(!(version&gt;=1.3.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.xml.resolver ;version=[1.2.0,1.3.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.xml.resolver.readers)(version&gt;=1.2.0)(!(version&gt;=1.3.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.xml.resolver.readers ;version=[1.2.0,1.3.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.events)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.events ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.html)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.html ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.ls)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.ls ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.ranges)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.ranges ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.traversal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.traversal ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom.views)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom.views ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.ext)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.ext ;version=0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers ;version=0.0.0
+    </require>
+  </resource>
+</repository>
